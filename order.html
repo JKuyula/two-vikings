@@ -1,0 +1,739 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Two Vikings</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="vikings.css" />
+    <style>
+        
+                
+      </style>
+      
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="navbar-container container">
+            <input type="checkbox" name="" id="">
+            <div class="hamburger-lines">
+                <span class="line line1"></span>
+                <span class="line line2"></span>
+                <span class="line line3"></span>
+            </div>
+            <ul class="menu-items">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#menu.html">Menu</a></li>
+                <li><a href="#">Order</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="review.html">Review</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <h1 class="logo">TWO VIKINGS</h1>
+        </div>
+    </nav>
+    <section class="showcase-area" id="showcase">
+        <div class="showcase-container">
+            <center><h1 class="main-title" id="home">
+                <p>FISH & CHIPS</p>
+                <p>TAKE-AWAY FOODS</p></h1></center>
+            <p>Good food starts here</p>
+        </div>
+    </section>
+    
+    <div class="order">
+       <center><p class="large"><h1>Place Your Order Here</h1></p></center>
+    </div>
+    <table style="width:100%">
+      <tr>
+        <div class="row 1">
+          <div class="column 1">
+            <div class="order-container">
+              <div class="menu-header">
+                <img src="img/AdobeStock_54636327_Preview.jpeg" alt="pic" />
+                <h1>Deep Fried</h1>
+                <p></p><br>
+              </div>
+              <ul class="menu-list">
+                <li class="menu-item">
+                  <div>
+                    <h3>Hake Fillet Regular</h3>
+                  </div>
+                  <div class="price">R50</div>
+                  <a href="#" data-name="Fish Cake" data-price="50" onclick="addToCart(this)"><button><i class="fas fa-shopping-cart"></i></button></a>
+                </li>
+                <li class="menu-item">
+                  <div>
+                    <h3>Line Fish</h3>
+                  </div>
+                  <div class="price">R80</div>
+                  <a href="#" data-name="Line Fish" data-price="80"onclick="addToCart(this)"><button><i class="fas fa-shopping-cart"></i></button></a>
+                </li>
+                <li class="menu-item">
+                  <div>
+                    <h3>Fish Cake</h3>
+                  </div>
+                  <div class="price">R30</div>
+                  <a href="#" data-name="Fish Cake" data-price="30"onclick="addToCart(this)" ><button><i class="fas fa-shopping-cart"></i></button></a>
+                </li>
+                <li class="menu-item">
+                  <div>
+                    <h3>Kingklip</h3>
+                  </div>
+                  <div class="price">R100</div>
+                  <a href="#" data-name="Kingklip" data-price="100" onclick="addToCart(this)"><button><i class="fas fa-shopping-cart"></i></button></a>
+                </li>
+                <li class="menu-item">
+                  <div>
+                    <h3>Russian</h3>
+                  </div>
+                  <div class="price">R19</div>
+                  <a href="#" data-name="Russian" data-price="19" onclick="addToCart(this)"><button><i class="fas fa-shopping-cart"></i></button></a>
+                </li>
+                <li class="menu-item">
+                  <div>
+                    <h3>Viennas</h3>
+                  </div>
+                  <div class="price">R10</div>
+                  <a href="#" data-name="Viennas" data-price="10" onclick="addToCart(this)"><button><i class="fas fa-shopping-cart"></i></button></a>
+                </li>
+                <li class="menu-item">
+                  <div>
+                    <h3>Cheese Griller</h3>
+                  </div>
+                  <div class="price">R20</div>
+                  <a href="#" data-name="Cheese Griller" data-price="50"onclick="addToCart(this)"><button><i class="fas fa-shopping-cart"></i></button></a>
+                </li>
+                <li class="menu-item">
+                  <div>
+                    <h3>Frankfurter</h3>
+                  </div>
+                  <div class="price">R19</div>
+                  <a href="#" data-name="Frankfurter" data-price="19"onclick="addToCart(this)"><button><i class="fas fa-shopping-cart"></i></button></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="column 2">
+            <div class="order-container">
+              <div class="menu-header">
+                <img src="img/fish_chips.jpeg" alt="pic" />
+                <h1>Meals For One</h1>
+                <p>Savory Rice on request</p>
+              </div>
+              <ul class="menu-list">
+                <li class="menu-item">
+                  <div>
+                    <h3>Fish & Chips</h3>
+                  </div>
+                  <div class="price">R68</div>
+                  <a href="#" data-name="Fish & Chips" data-price="68"onclick="addToCart(this)" ><button><i class="fas fa-shopping-cart"></i></button></a>
+                </li>
+                <li class="menu-item">
+                  <div>
+                    <h3>Line Fish & Chips</h3>
+                  </div>
+                  <div class="price">R98</div>
+                  <a href="#" data-name="Line Fish & Chips" data-price="98" onclick="addToCart(this)"><button><i class="fas fa-shopping-cart"></i></button></a>
+                </li>
+                <li class="menu-item">
+                  <div>
+                    <h3>Fish Cake & Chips</h3>
+                  </div>
+                  <div class="price">R53</div>
+                  <a href="#" data-name="Fish Cake & Chips" data-price="53" onclick="addToCart(this)" ><button><i class="fas fa-shopping-cart"></i></button></a>
+                </li>
+                <li class="menu-item">
+                  <div>
+                    <h3>Kingklip & Chips</h3>
+                  </div>
+                  <div class="price">R118</div>
+                  <a href="#" data-name="Kingklip & Chips" data-price="118" onclick="addToCart(this)"><button><i class="fas fa-shopping-cart"></i></button></a>
+
+                </li>
+                <li class="menu-item">
+                  <div>
+                    <h3>Kids Supper</h3>
+                  </div>
+                  <div class="price">R46</div><a href="#" data-name="Kids Supper" data-price="46"onclick="addToCart(this)"><button><i class="fas fa-shopping-cart"></i></button></a>
+                </li>
+                <li class="menu-item">
+                  <div>
+                    <h3>Fish Calamari & Chips</h3>
+                  </div>
+                  <div class="price">R115</div><a href="#" data-name="Fish Calamari & Chips" data-price="115" onclick="addToCart(this)"><button><i class="fas fa-shopping-cart"></i></button></a>
+                </li>
+                <li class="menu-item">
+                  <div>
+                    <h3>Russian & Chips</h3>
+                  </div>
+                  <div class="price">R46</div><a href="#" data-name="Russian & Chips" data-price="46" onclick="addToCart(this)"><button><i class="fas fa-shopping-cart"></i></button></a>
+                </li>
+                <li class="menu-item">
+                  <div>
+                    <h3>Double Russian & Chips</h3>
+                  </div>
+                  <div class="price">R67</div><a href="#" data-name="Double Russian & Chips" data-price="67" onclick="addToCart(this)"><button><i class="fas fa-shopping-cart"></i></button></a>
+                </li>
+                <li class="menu-item">
+                  <div>
+                    <h3>Griller & Chips</h3>
+                  </div>
+                  <div class="price">R47</div><a href="#" data-name="Griller & Chips" data-price="47" onclick="addToCart(this)"><button><i class="fas fa-shopping-cart"></i></button></a>
+                </li>
+                <li class="menu-item">
+                  <div>
+                    <h3>Frankfurter & Chips</h3>
+                  </div>
+                  <div class="price">R46</div><a href="#" data-name="Frankfurter & Chips" data-price="46"onclick="addToCart(this)"><button><i class="fas fa-shopping-cart"></i></button></a>
+                </li>
+                <li class="menu-item">
+                  <div>
+                    <h3>Double Griller & Chips</h3>
+                  </div>
+                  <div class="price">R69</div><a href="#" data-name="Double Griller & Chips" data-price="69"onclick="addToCart(this)"><button><i class="fas fa-shopping-cart"></i></button></a>
+                </li>
+              </ul>
+            </div>
+
+          </div>
+          <div class="column 3">
+            <div class="order-container">
+              <div class="menu-header">
+                <img src="img/2vikings_burger.jpg" alt="pic" />
+                <h1>Hamgurgers</h1>
+                <p>with chips extra R22</p>
+              </div>
+              <ul class="menu-list">
+                <li class="menu-item">
+                  <div>
+                    <h3>Hamburger</h3>
+                  </div>
+                  <div class="price">R40</div><a href="#" data-name="Hamburger" data-price="40" onclick="addToCart(this)"><button><i class="fas fa-shopping-cart"></i></button></a>
+                </li>
+                <li class="menu-item">
+                  <div>
+                    <h3>Cheese Burger</h3>
+                  </div>
+                  <div class="price">R49</div><a href="#" data-name="Cheese Burger" data-price="49" onclick="addToCart(this)"><button><i class="fas fa-shopping-cart"></i></button></a>
+                </li>
+                <li class="menu-item">
+                  <div>
+                    <h3>Egg Burger</h3>
+                  </div>
+                  <div class="price">R49</div><a href="#" data-name="Egg Burger" data-price="49" onclick="addToCart(this)"><button><i class="fas fa-shopping-cart"></i></button></a>
+                </li>
+                <li class="menu-item">
+                  <div>
+                    <h3>Cheese & Egg Burger</h3>
+                  </div>
+                  <div class="price">R55</div><a href="#" data-name="Cheese & Egg Burger" data-price="55" onclick="addToCart(this)"><button><i class="fas fa-shopping-cart"></i></button></a>
+                </li>
+                <li class="menu-item">
+                  <div>
+                    <h3>Barbeque Burger</h3>
+                  </div>
+                  <div class="price">R40</div><a href="#" data-name="Barbeque Burger" data-price="40" onclick="addToCart(this)"><button><i class="fas fa-shopping-cart"></i></button></a>
+                </li>
+                <li class="menu-item">
+                  <div>
+                    <h3>Chilli Burger</h3>
+                  </div>
+                  <div class="price">R40</div><a href="#" data-name="Chilli Burger" data-price="40" onclick="addToCart(this)"><button><i class="fas fa-shopping-cart"></i></button></a>
+                </li>
+                <li class="menu-item">
+                  <div>
+                    <h3>Bacon & Egg Burger</h3>
+                  </div>
+                  <div class="price">R56</div><a href="#" data-name="Bacon & Egg Burger" data-price="56" onclick="addToCart(this)"><button><i class="fas fa-shopping-cart"></i></button></a>
+                </li>
+                <li class="menu-item">
+                  <div>
+                    <h3>Bacon & Egg Cheese Burger</h3>
+                  </div>
+                  <div class="price">R56</div><a href="#" data-name="Bacon & Egg Cheese Burger" data-price="56" onclick="addToCart(this)"><button><i class="fas fa-shopping-cart"></i></button></a>
+                </li>
+                <li class="menu-item">
+                  <div>
+                    <h3>Viking Burger</h3>
+                  </div>
+                  <div class="price">R74</div><a href="#" data-name="Viking Burger" data-price="74" onclick="addToCart(this)"><button><i class="fas fa-shopping-cart"></i></button></a>
+                </li>
+                <li class="menu-item">
+                  <div>
+                    <h3>Fish Burger</h3>
+                  </div>
+                  <div class="price">R58</div><a href="#" data-name="Fish Burger" data-price="58" onclick="addToCart(this)"><button><i class="fas fa-shopping-cart"></i></button></a>
+                </li>
+                <li class="menu-item">
+                  <div>
+                    <h3>Chicken Burger</h3>
+                  </div>
+                  <div class="price">R43</div><a href="#" data-name="Chicken Burger" data-price="43" onclick="addToCart(this)"><button><i class="fas fa-shopping-cart"></i></button></a>
+                </li>
+                <li class="menu-item">
+                  <div>
+                    <h3>Calamari Burger</h3>
+                  </div>
+                  <div class="price">R56</div><a href="#" data-name="Calamari Burger" data-price="56" onclick="addToCart(this)" ><button><i class="fas fa-shopping-cart"></i></button></a>
+                </li>
+              </ul>
+              
+          </div>
+
+          </div>
+        </div>
+        <div class="row 2">
+          <div class="column 1">
+            <div class="order-container">
+              <div class="menu-header">
+                <img src="img/french-fries.jpg" alt="pic" />
+                <h1>Chips</h1>
+                <p></p><br>
+              </div>
+              <ul class="menu-list">
+                <li class="menu-item">
+                  <div>
+                    <h3>Snacker</h3>
+                  </div>
+                  <div class="price">R33</div><a href="#" data-name="Snacker" data-price="33" onclick="addToCart(this)" ><button><i class="fas fa-shopping-cart"></i></button></a>
+                </li>
+                <li class="menu-item">
+                  <div>
+                    <h3>Small</h3>
+                  </div>
+                  <div class="price">R44</div><a href="#" data-name="Small" data-price="44" onclick="addToCart(this)" ><button><i class="fas fa-shopping-cart"></i></button></a>
+                </li>
+                <li class="menu-item">
+                  <div>
+                    <h3>Trio</h3>
+                  </div>
+                  <div class="price">R65</div><a href="#" data-name="Trio" data-price="65" onclick="addToCart(this)" ><button><i class="fas fa-shopping-cart"></i></button></a>
+                </li>
+                <li class="menu-item">
+                  <div>
+                    <h3>Medium</h3>
+                  </div>
+                  <div class="price">R79</div><a href="#" data-name="Medium" data-price="79" onclick="addToCart(this)"><button><i class="fas fa-shopping-cart"></i></button></a>
+                </li>
+                <li class="menu-item">
+                  <div>
+                    <h3>Large</h3>
+                  </div>
+                  <div class="price">R115</div><a href="#" data-name="Large" data-price="115" onclick="addToCart(this)"><button><i class="fas fa-shopping-cart"></i></button></a>
+                </li>
+              </ul>
+           </div>
+          </div>
+          <div class="column 2">
+            <div class="order-container">
+              <div class="menu-header">
+                <img src="img/2vikings_calamari.jpg" alt="pic" />
+                <h1>Fish Meals</h1>
+                <p></p><br>
+              </div>
+              <ul class="menu-list">
+                <li class="menu-item">
+                  <div>
+                    <h3>Darby & Joan</h3>
+                    <p>2 Regular Fish & Chips</p>
+                  </div>
+                  <div class="price">R118</div><a href="#" data-name="2 Regular Fish & Chips" data-price="118" onclick="addToCart(this)"><button><i class="fas fa-shopping-cart"></i></button></a>
+                </li>
+                <li class="menu-item">
+                  <div>
+                    <h3>Trio</h3>
+                    <p>3 Regular Fish & Chips</p>
+                  </div>
+                  <div class="price">R178</div><a href="#" data-name="3 Regular Fish & Chips" data-price="178"onclick="addToCart(this)" ><button><i class="fas fa-shopping-cart"></i></button></a>
+                </li>
+                <li class="menu-item">
+                  <div>
+                    <h3>Family Pack</h3>
+                    <p>4 Regular Fish & Chips</p>
+                  </div>
+                  <div class="price">R236</div><a href="#" data-name="Family Pack" data-price="236" onclick="addToCart(this)"><button><i class="fas fa-shopping-cart"></i></button></a>
+                </li>
+                <li class="menu-item">
+                  <div>
+                    <h3>Six Pack</h3>
+                    <p>6 Regular Fish & Chips</p>
+                  </div>
+                  <div class="price">R354</div><a href="#" data-name="Six Pack" data-price="354" onclick="addToCart(this)"><button><i class="fas fa-shopping-cart"></i></button></a>
+                </li>
+                <li class="menu-item">
+                  <div>
+                    <h3>Calamari Starter</h3>
+                  </div>
+                  <div class="price">R46</div><a href="#" data-name="Calamari Starter" data-price="46" onclick="addToCart(this)"><button><i class="fas fa-shopping-cart"></i></button></a>
+                </li>
+                <li class="menu-item">
+                  <div>
+                    <h3>Calamari & Chips</h3>
+                  </div>
+                  <div class="price">R65</div><a href="#" data-name="Calamari & Chips" data-price="65" onclick="addToCart(this)"><button><i class="fas fa-shopping-cart"></i></button></a>
+                </li>
+              </ul>
+           </div>
+          </div>
+          <div class="column 3">
+            <div class="order-container">
+              <div class="menu-header">
+                <img src="img/2vikings_prawns.jpg" alt="pic" />
+                <h1>Pink Prawns</h1>
+                <p>All Medium size-Grilled-Head on</p>
+              </div>
+              <ul class="menu-list">
+                <li class="menu-item">
+                    <div>
+                        <h3>Loose 6 Prawns</h3>
+                    </div>
+                    <div class="price">R73</div><a href="#" data-name="Loose 6 Prawns" data-price="73" onclick="addToCart(this)"><button><i class="fas fa-shopping-cart"></i></button></a>
+                </li>
+                <li class="menu-item">
+                    <div>
+                      <h3>10 Prawns</h3>
+                    </div>
+                    <div class="price">R123</div><a href="#" data-name="10 Prawns" data-price="123" onclick="addToCart(this)" ><button><i class="fas fa-shopping-cart"></i></button></a>
+                </li>
+                <li class="menu-item">
+                    <div>
+                      <h3>20 Prawns</h3>
+                    </div>
+                    <div class="price">R230</div><a href="#" data-name="20 Prawns" data-price="230"  onclick="addToCart(this)"><button><i class="fas fa-shopping-cart"></i></button></a>
+                </li>  
+              </ul>
+           </div>
+          </div>
+        </div>
+        <div class="row 3">
+          <div class="column 1">
+            <div class="order-container">
+              <div class="menu-header">
+                  <img src="img/sandwich.jpg" alt="pic" />
+                <h1>Toasted Sandwiches</h1>
+                <p></p><br>
+              </div>
+              <ul class="menu-list">
+                <li class="menu-item">
+                  <div>
+                    <h3>Cheese</h3>
+                  </div>
+                  <div class="price">R22</div><a href="#" data-name="Cheese" data-price="22" onclick="addToCart(this)"><button><i class="fas fa-shopping-cart"></i></button></a>
+                </li>
+                <li class="menu-item">
+                  <div>
+                    <h3>Cheese & Tomato</h3>
+                  </div> 
+                  <div class="price">R23</div><a href="#" data-name="Cheese & Tomato" data-price="23" onclick="addToCart(this)"><button><i class="fas fa-shopping-cart"></i></button></a>
+                </li>
+                <li class="menu-item">
+                  <div>
+                    <h3>Bacon</h3>
+                  </div>
+                  <div class="price">R29</div><a href="#" data-name="Bacon" data-price="29" onclick="addToCart(this)"><button><i class="fas fa-shopping-cart"></i></button></a>
+                </li>
+                <li class="menu-item">
+                  <div>
+                    <h3>Bacon & Egg</h3>
+                  </div>
+                  <div class="price">R32</div><a href="#" data-name="Bacon & Egg" data-price="32" onclick="addToCart(this)"><button><i class="fas fa-shopping-cart"></i></button></a>
+                </li>
+                <li class="menu-item">
+                  <div>
+                    <h3>Bacon & Cheese</h3>
+                  </div>
+                  <div class="price">R36</div><a href="#" data-name="Bacon & Cheese" data-price="36" onclick="addToCart(this)" ><button><i class="fas fa-shopping-cart"></i></button></a>
+                </li>
+                <li class="menu-item">
+                  <div>
+                    <h3>Chicken & Mayo</h3>
+                  </div>
+                  <div class="price">R45</div><a href="#" data-name="Chicken & Mayo" data-price="45" onclick="addToCart(this)"><button><i class="fas fa-shopping-cart"></i></button></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="column 2">
+            <div class="order-container">
+              <div class="menu-header">
+                  <img src="img/2vikings_patter2.jpg" alt="pic" />
+                <h1>Larney Food</h1>
+                <p></p><br>
+              </div>
+              <ul class="menu-list">
+                <li class="menu-item">
+                  <div>
+                    <h3>Combo</h3>
+                    <p>Prawns & Calamari on Rice/Chips</p>
+                  </div>
+                  <div class="price">R135</div><a href="#" data-name="Combo" data-price="135" onclick="addToCart(this)"><button><i class="fas fa-shopping-cart"></i></button></a>
+                </li>
+                <li class="menu-item">
+                  <div>
+                    <h3>Mini Platter</h3>
+                    <p>1 Regular Hake,Calamari & 6 Prawns</p>
+                  </div>
+                  <div class="price">R190</div><a href="#" data-name="Mini Platter" data-price="190" onclick="addToCart(this)"><button><i class="fas fa-shopping-cart"></i></button></a>
+                </li>
+              </ul>
+           </div>
+          </div>
+          <div class="column 3">
+            <div class="order-container">
+              <div class="menu-header">
+                <img src="img/top-view-hot-dog-with-napkin.jpg" alt="pic" />
+                <h1>Hot Dogs</h1>
+                <p></p><br>
+              </div>
+              <ul class="menu-list">
+                <li class="menu-item">
+                  <div>
+                    <h3>Hot Dog</h3>
+                  </div>
+                  <div class="price">R15</div><a href="#" data-name="Hot Dog" data-price="15" onclick="addToCart(this)"><button><i class="fas fa-shopping-cart"></i></button></a>
+                </li>
+                <li class="menu-item">
+                  <div>
+                    <h3>Russian Dog</h3>
+                  </div> 
+                  <div class="price">R23</div><a href="#" data-name="Russian Dog" data-price="23" onclick="addToCart(this)"><button><i class="fas fa-shopping-cart"></i></button></a>
+                </li>
+                <li class="menu-item">
+                  <div>
+                    <h3>Cheese Griller Dog</h3>
+                  </div>
+                  <div class="price">R25</div><a href="#" data-name="Cheese Griller Dog" data-price="25" onclick="addToCart(this)"><button><i class="fas fa-shopping-cart"></i></button></a>
+                </li>
+                <li class="menu-item">
+                  <div>
+                    <h3>Frank Dog</h3>
+                  </div>
+                  <div class="price">R23</div><a href="#" data-name="Frank Dog" data-price="23" onclick="addToCart(this)"><button><i class="fas fa-shopping-cart"></i></button></a>
+                </li>
+              </ul>
+           </div>
+          </div>
+        </div>
+        <div class="row 4">
+          <div class="column 1">
+            <div class="order-container">
+              <div class="menu-header">
+                <img src="img/thai-sukiyaki-spicy-sauce-white-tiny-bowl.jpg" alt="pic" />
+                <h1>Sauces</h1>
+                <p>in 70ml Tubs</p>
+              </div>
+              <ul class="menu-list">
+                <li class="menu-item">
+                  <div>
+                    <h3>Peri-Peri</h3>
+                  </div>
+                  <div class="price">R12</div><a href="#" data-name="Peri-Peri" data-price="12" onclick="addToCart(this)"><button><i class="fas fa-shopping-cart"></i></button></a>
+                </li>
+                <li class="menu-item">
+                  <div>
+                    <h3>Garlic</h3>
+                  </div> 
+                  <div class="price">R12</div><a href="#" data-name="Garlic" data-price="12"onclick="addToCart(this)"><button><i class="fas fa-shopping-cart"></i></button></a>
+                </li>
+                <li class="menu-item">
+                  <div>
+                    <h3>Seafood</h3>
+                  </div>
+                  <div class="price">R12</div><a href="#" data-name="Seafood" data-price="12" onclick="addToCart(this)"><button><i class="fas fa-shopping-cart"></i></button></a>
+                </li>
+                <li class="menu-item">
+                  <div>
+                    <h3>Tartar</h3>
+                  </div>
+                  <div class="price">R12</div><a href="#" data-name="Tartar" data-price="12" onclick="addToCart(this)"><button><i class="fas fa-shopping-cart"></i></button></a>  
+                </li>
+                <li class="menu-item">
+                  <div>
+                    <h3>Chilli</h3>
+                  </div>
+                  <div class="price">R12</div><a href="#" data-name="Chilli" data-price="12" onclick="addToCart(this)" ><button><i class="fas fa-shopping-cart"></i></button></a>
+                </li>
+              </ul>
+           </div>
+          </div>
+          <div class="column 2">
+            <div class="order-container">
+              <div class="menu-header">
+                <img src="img/salad-bowl-wooden-table.jpg" alt="pic" />
+                <h1>Salads</h1>
+                <p></p><br>
+              </div>
+              <ul class="menu-list">
+                <li class="menu-item">
+                  <div>
+                    <h3>French Salad</h3>
+                  </div>
+                  <div class="price">R30</div><a href="#" data-name="French Salad" data-price="30" onclick="addToCart(this)"><button><i class="fas fa-shopping-cart"></i></button></a>
+                </li>
+                <li class="menu-item">
+                  <div>
+                    <h3>Greek Salad</h3>
+                  </div> 
+                  <div class="price">R47</div><a href="#" data-name="Greek Salad" data-price="47" onclick="addToCart(this)"><button><i class="fas fa-shopping-cart"></i></button></a>
+                </li>
+                <li class="menu-item">
+                  <div>
+                    <h3>Coleslaw</h3>
+                  </div>
+                  <div class="price">R35</div><a href="#" data-name="Coleslaw" data-price="35" onclick="addToCart(this)" ><button><i class="fas fa-shopping-cart"></i></button></a>
+                </li>
+              </ul>
+           </div>
+          </div>
+          <div class="column 3">
+            <div class="order-container">
+              <div class="menu-header">
+                  <img src="img/onion-rings-white-white-white.jpg" alt="pic" />
+                <h1>Side Order</h1>
+                <p></p><br>
+              </div>
+              <ul class="menu-list">
+                <li class="menu-item">
+                  <div>
+                    <h3>Onion Rings</h3>
+                  </div>
+                  <div class="price">R42</div><a href="#" data-name="Onion Rings" data-price="42" onclick="addToCart(this)"><button><i class="fas fa-shopping-cart"></i></button></a>
+                </li>
+                <li class="menu-item">
+                  <div>
+                    <h3>Crumbled Mushroom</h3>
+                  </div> 
+                  <div class="price">R47</div><a href="#" data-name="Crumbled Mushroom" data-price="47" onclick="addToCart(this)"><button><i class="fas fa-shopping-cart"></i></button></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </tr>
+    </table>
+    <!--Shopping Cart-->
+    <section class="container content-section" id="shopping-cart">
+      
+      <h3 style="text-decoration: underline;text-align: center; margin-bottom: 7%;">Shopping Cart</h3>
+    
+    <table id="cart-table" style="width:100%">
+      <thead>
+        <tr>
+          <th>Item</th>
+          <th>Price</th>
+        </tr>
+      </thead>
+      <tbody class="cart-items">
+        
+        
+      </tbody>
+    </table>
+
+        <div id="total-amount"> 
+          <strong class="cart-total-title" style="text-align: left">Total</strong>
+          <span  class="cart-total-price" style="text-align: right;">R0</span>
+        </div>
+    
+
+        <div class="btn-purchase">
+          <center><a ref=# class="btn btn-primary" href="cart.html">ORDER NOW</a></center>
+        </div>
+        
+
+    </section>
+    <!--FooterS-->
+    <section>
+      <footer>
+        <div class="footer-container-item">
+            <div class="footer-column">
+              <h2>TWO VIKINGS</h2>
+              <p>
+               Fish & Chips<br>Take-Away Foods<br>
+              </p>
+            </div>
+            <div class="footer-column">
+              <h3>Address</h3>
+              <p>
+                  Shop 17 Southgate Mall<br>
+                  400 Kingsway Ave,Amanzimtoti<br>
+              </p>
+            </div>
+            <div class="footer-column">
+              <h3 >Trading hours</h3>
+              <table class="footer-table" style="border-color: #f2f1f1;">
+                <tbody>
+                  <tr>
+                    <td>Mon - Sat :</td>
+                    <td>9:30am - 7pm</td>
+                  </tr>
+                  <tr>
+                    <td>Sun      :</td>
+                    <td>11am - 6:30pm</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+        </div>
+        <div class="text-center p-3" style="background-color: rgba(99, 98, 98, 0.2);">
+          <center><p>Designed by Joelle Kuyula</p></center>
+        </div>
+      </footer>
+         
+    </section>
+
+    <script>
+      // Function to add items to the cart
+        function addToCart(item) {
+          // Get the item details from the data attributes
+          var itemName = item.getAttribute("data-name");
+          var itemPrice = parseFloat(item.getAttribute("data-price"));
+
+          // Create a new table row for the item in the shopping cart
+          var cartTable = document.getElementById("cart-table");
+          var newRow = cartTable.insertRow();
+
+          // Create table cells for the item name, price, and remove button
+          var nameCell = newRow.insertCell();
+          nameCell.textContent = itemName;
+
+          var priceCell = newRow.insertCell();
+          priceCell.textContent = "R" + itemPrice.toFixed(2);
+
+          var removeCell = newRow.insertCell();
+          var removeButton = document.createElement("button");
+          removeButton.textContent = "Remove";
+          removeButton.classList.add("remove-button");
+          removeButton.addEventListener("click", function() {
+            // Remove the item from the cart and update the total amount
+            cartTable.deleteRow(newRow.rowIndex);
+            updateTotal();
+          });
+          removeCell.appendChild(removeButton);
+
+          // Update the total amount
+          updateTotal();
+        }
+
+          // Function to update the total amount
+          function updateTotal() {
+            var cartTable = document.getElementById("cart-table");
+            var total = 0;
+
+            // Iterate over each row in the cart table and sum up the prices
+            for (var i = 1; i < cartTable.rows.length; i++) {
+              var price = parseFloat(cartTable.rows[i].cells[1].textContent.substring(1));
+              total += price;
+            }
+
+            // Display the total amount
+            var totalAmount = document.getElementById("total-amount");
+            totalAmount.textContent = "Total: R" + total.toFixed(2);
+          }
+
+    </script>
+
+  </body>
+</html>    
